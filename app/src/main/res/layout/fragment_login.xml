@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".login$PlaceholderFragment"
+    android:id="@+id/bkg"
+    android:background="#ffffa34f">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:background="#ffffffff"
+        android:hint="Email"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/pwd"
+        android:layout_alignStart="@+id/pwd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pwd"
+        android:background="#ffffffff"
+        android:hint="Password"
+        android:padding="5dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="     DipTea"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/email"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:textSize="40dp"
+        android:visibility="visible"
+        android:singleLine="false"
+        android:gravity="fill_horizontal|center"
+        android:textAlignment="center"
+        android:background="#fffff7b7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/btnSignup"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/pwd"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login through Facebook"
+        android:id="@+id/btnFB"
+        android:textColor="#ffffffff"
+        android:background="#ff4b63ff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnSignup"
+        android:layout_alignLeft="@+id/pwd"
+        android:layout_alignStart="@+id/pwd"
+        android:paddingTop="3dp" />
+
+</RelativeLayout>
